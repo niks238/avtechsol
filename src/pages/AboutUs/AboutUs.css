@@ -1,0 +1,221 @@
+
+/* Section Styles */
+.about-us-section {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left; /* Align items to the left */
+    padding: 40px 20px;
+  }
+  
+  /* Container for the section */
+  .about-us-container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  /* Left side content */
+  .about-us-left {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .about-us-left h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-us-left p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .about-us-left b {
+    font-weight: bold;
+  }
+  
+  .about-us-left .professional-team,
+  .about-us-left .certification-organization,
+  .about-us-left .feedback-testimonial {
+    margin-top: 10px;
+  }
+  
+  /* Right side content (Image) */
+  .about-us-right {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .about-us-right img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  .why-choose-us-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 20px;
+  }
+  
+  .why-choose-us-container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  
+  .why-choose-us-text {
+    flex: 1;
+    padding-left: 20px;
+    text-align: left;
+  }
+  
+  .why-choose-us-text h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  
+  .why-choose-us-text p {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  
+  .why-choose-us-video {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .why-choose-us-video-content {
+  width: 500px;
+  height: 590px;
+    border-radius: 8px;
+    object-fit: cover;
+    
+  }
+  /* Container section */
+/* Container section */
+.partner-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #eee;
+}
+
+/* Section heading */
+.partner-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Introductory text */
+.partner-section p.intro-text {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+/* Company count box */
+.company-count-box {
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Company count heading */
+.company-count-box h3 {
+  font-size: 2rem;
+  color: #007bff;
+}
+
+/* Outer container for company logos */
+.company-carousel {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Scroll animation */
+@keyframes scroll-companies {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Inner scrolling container */
+.company-list-inner {
+  display: flex;
+  gap: 30px;
+  animation: scroll-companies 20s linear infinite;
+}
+
+/* Individual company item */
+.company-item {
+  flex: 0 0 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 80px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f8f8f8;
+  transition: transform 0.3s ease;
+}
+
+.company-item img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 4px;
+}
+
+/* Hover effect */
+.company-item:hover {
+  transform: scale(1.05);
+}
+
+
+/* Additional styles for scroll animation */
+@keyframes scroll-companies {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.company-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+.company-list-inner {
+  display: flex;
+  gap: 30px;
+  animation: scroll-companies 20s linear infinite;
+}
+
+/* Repeating the items to create a seamless scrolling effect */
+.company-item {
+  flex: 0 0 150px;
+  text-align: center;
+}
+
+.company-item img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+  

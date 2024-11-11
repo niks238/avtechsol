@@ -1,0 +1,160 @@
+.market-verticals {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .intro-section {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .intro-section h1 {
+    color: #007bff;
+    font-size: 2.5rem;
+  }
+  
+  .intro-section p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .verticals-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+    animation: fadeInUp 1.5s ease-in-out;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 22%;
+    text-align: center;
+    transition: transform 0.3s ease;
+    animation: slideUp 0.5s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card h3 {
+    color: #007bff;
+    font-size: 1.8rem;
+  }
+  
+  .card p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .icon {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .card:hover .icon {
+    color: #ffc107;
+  }
+  
+  /* Case Studies Section */
+  .case-studies {
+    margin-top: 50px;
+    background-color: #f1f1f1;
+    padding: 40px 20px;
+    border-radius: 8px;
+  }
+  
+  .case-studies h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #007bff;
+    margin-bottom: 30px;
+  }
+  
+  .case-study {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .case-study h3 {
+    color: #007bff;
+    font-size: 1.8rem;
+  }
+  
+  .case-study p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* CTA Section */
+  .cta {
+    text-align: center;
+    background-color: #007bff;
+    padding: 50px 20px;
+    color: white;
+  }
+  
+  .cta h2 {
+    font-size: 2rem;
+  }
+  
+  .cta-button {
+    background-color: #ffc107;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    color: #333;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .cta-button:hover {
+    background-color: #ff9800;
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .verticals-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+  
