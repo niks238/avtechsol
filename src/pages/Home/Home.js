@@ -16,6 +16,7 @@ import microphonesone from "../../images/assets/Microphones-3.jpg"
 import mixerone from "../../images/assets/Mixers-2.jpg"
 import LEDWallsone from "../../images/assets/LED Screens.jpg"
 import Footer from "../../components/Footer/Footer";
+import Quote from "../../components/Quote/Quote"
 
 function Home() {
 
@@ -191,46 +192,7 @@ function Home() {
   </div>
 </section>
       {/* Quick Quote Section */}
-      <section id="quote" className="quote-section">
-      <div className="quote-container">
-        <h2 className="quote-heading">Request a Quick Quote</h2>
-        <form className="quote-form">
-          <div className="form-group">
-            <label htmlFor="event-date">Event Date</label>
-            <input
-              type="date"
-              id="event-date"
-              name="event-date"
-              required
-              placeholder="Select Event Date"
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="location">Location</label>
-            <input
-              type="text"
-              id="location"
-              name="location"
-              required
-              placeholder="Enter Location"
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="equipment">Required Equipment</label>
-            <textarea
-              id="equipment"
-              name="equipment"
-              rows="4"
-              required
-              placeholder="Describe the equipment you need"
-            ></textarea>
-          </div>
-          <button type="submit" className="quote-btn">
-            Request Quote
-          </button>
-        </form>
-      </div>
-    </section>
+      <Quote/>
       {/* Footer Section */}
     <Footer/>
     </>
