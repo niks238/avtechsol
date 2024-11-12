@@ -34,10 +34,10 @@ function Footer() {
         <div className="footer-section social">
           <h2>Follow Us</h2>
           <div className="social-icons">
-            <Link to="#"><FaFacebook className="social-icon" /></Link>
+            <Link to="https://www.facebook.com/avtechsolutionnagpur"><FaFacebook className="social-icon" /></Link>
             <Link to="#"><FaTwitter className="social-icon" /></Link>
-            <Link to="#"><FaInstagram className="social-icon" /></Link>
-            <Link to="#"><FaLinkedin className="social-icon" /></Link>
+            <Link to="https://www.instagram.com/avtech_solution?igsh=MXU0ZzMwZnY1MWh3OA%3D%3D"><FaInstagram className="social-icon" /></Link>
+            <Link to="https://www.linkedin.com/company/69615062/admin/dashboard/"><FaLinkedin className="social-icon" /></Link>
           </div>
         </div>
       </div>

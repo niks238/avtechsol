@@ -17,14 +17,10 @@ function Navbar() {
     <>
      <div className="top-bar">
         <div className="social-links">
-          <p className="text-dark">Connect With Us</p>
-          <Link to="#" className="social-icon"><img alt="" src={facebook} className="social-icon-image"/></Link>
-          <Link to="#" className="social-icon"><img alt="" src={instgram} className="social-icon-image"/></Link>
-          <Link to="#" className="social-icon"><img alt="" src={Linkedin} className="social-icon-image"/></Link>
-        </div>
-        <div className="auth-links">
-          <Link to="#" className="auth-button">Sign In</Link>
-          <Link to="#" className="auth-button">Login</Link>
+          <p className="text-white mt-2">Connect With Us</p>
+          <Link to="https://www.instagram.com/avtech_solution?igsh=MXU0ZzMwZnY1MWh3OA%3D%3D" className="social-icon"><img alt="" src={facebook} className="social-icon-image"/></Link>
+          <Link to="https://www.facebook.com/avtechsolutionnagpur" className="social-icon"><img alt="" src={instgram} className="social-icon-image"/></Link>
+          <Link to="https://www.linkedin.com/company/69615062/admin/dashboard/" className="social-icon"><img alt="" src={Linkedin} className="social-icon-image"/></Link>
         </div>
       </div>
      <nav className="navbar">

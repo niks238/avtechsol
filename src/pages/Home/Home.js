@@ -40,7 +40,7 @@ function Home() {
         <p className="about-description">
           We specialize in providing top-quality audio-visual rental solutions for conferences and events. Our commitment to excellence ensures your event has flawless AV support.
         </p>
-        <button className="about-cta-button">Learn More</button>
+       <a href="/aboutus"><button className="about-cta-button">Learn More</button></a>
       </div>
       <div className="about-image">
         <img src={conferenceImage} alt="Conference AV Setup" className="about-img" />
@@ -89,10 +89,10 @@ function Home() {
       </div>
     </section>
       {/* Equipment Section */}
-      <div className="two-column-section d-flex ">
+      <div className="two-column-section d-flex flex-wrap">
       {/* Content Column */}
       <div className="content-column">
-        <h2>Our Advanced Technology</h2>
+        <h2 className="section-title">Our Advanced Technology</h2>
         <p>
           Discover the latest in audio-visual technology to make your events unforgettable. From advanced sound systems to high-definition screens, we bring top-tier solutions to elevate your experience.
         </p>
@@ -100,8 +100,8 @@ function Home() {
       </div>
 
       {/* Image Column with Image Card */}
-      <div className="image-column">
-        <div className="image-card">
+      <div className="image-column ">
+        <div className="image-card d-flex flex-wrap">
           <img src={microphones} alt="Equipment 1" className="image-card-item" />
           <img src={mixer} alt="Equipment 2" className="image-card-item" />
           <img src={LEDWalls} alt="Equipment 3" className="image-card-item" />
@@ -163,7 +163,7 @@ function Home() {
       <section id="testimonials" className="testimonials-section">
   <div className="testimonials-background">
     <h2 className="testimonials-heading"> Client Testimonials</h2>
-    <div className="testimonials-cards">
+    <div className="testimonials-cards ">
       <div className="testimonial-card">
         <blockquote>
           "The AV team was phenomenal! Our conference was a success thanks to their expertise."

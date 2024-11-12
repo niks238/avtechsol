@@ -1,7 +1,45 @@
 
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2, h3 {
+  color: #2A3663;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+/* Header Styles */
+header {
+  background: url('https://www.audiovisual.ie/wp-content/uploads/2015/12/Do-You-Need-An-Audio-Visual-Operator-Audio-Visual-Rental-Ireland.jpg') no-repeat center center/cover;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
 /* Section Styles */
 .about-us-section {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     text-align: left; /* Align items to the left */
     padding: 40px 20px;
@@ -9,26 +47,27 @@
   
   /* Container for the section */
   .about-us-container {
-    max-width: 1200px;
     display: flex;
+    gap: 20px;
     justify-content: space-between;
-    width: 100%;
+    align-items: center;
+    padding: 40px 20px;
   }
   
   /* Left side content */
   .about-us-left {
     flex: 1;
-    padding-right: 20px;
   }
-  
+  .about-us-right {
+    flex: 1;
+  }
   .about-us-left h2 {
     font-size: 2rem;
     margin-bottom: 20px;
   }
   
   .about-us-left p {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+    font-size: 1rem;
   }
   
   .about-us-left b {
@@ -39,6 +78,8 @@
   .about-us-left .certification-organization,
   .about-us-left .feedback-testimonial {
     margin-top: 10px;
+    font-weight: normal;
+    color: #007bff;
   }
   
   /* Right side content (Image) */
@@ -46,14 +87,15 @@
     flex: 1;
     text-align: center;
   }
-  
   .about-us-right img {
-    max-width: 100%;
+    width: 100%;
+    height: auto;
     border-radius: 8px;
   }
-  .why-choose-us-section {
+ 
+  .why-choose-us-container {
     display: flex;
-    justify-content: space-evenly;
+    gap: 20px;
     align-items: center;
     padding: 40px 20px;
   }
@@ -81,32 +123,65 @@
     line-height: 1.5;
   }
   
+
   .why-choose-us-video {
     flex: 1;
-    text-align: left;
+  }
+  .why-choose-us-text {
+    flex: 1;
   }
   
   .why-choose-us-video-content {
-  width: 500px;
-  height: 590px;
+    width: 100%;
+    height: auto;
     border-radius: 8px;
-    object-fit: cover;
-    
   }
+  .we-offer-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  .we-offer-section .section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  .we-offer-section .offer-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 250px;
+    margin: 10px;
+  }
+  .we-offer-section .offer-item i {
+    font-size: 2rem;
+    color: #007bff;
+  }
+  
+  .we-offer-section .offer-item h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+  }
+  
+  .we-offer-section .offer-item p {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
   /* Container section */
 /* Container section */
 .partner-section {
   padding: 60px 20px;
+  background-color: #f9f9f9;
   text-align: center;
-  background-color: #eee;
 }
-
 /* Section heading */
 .partner-section h2 {
   font-size: 2rem;
   margin-bottom: 20px;
 }
-
 /* Introductory text */
 .partner-section p.intro-text {
   font-size: 1.2rem;
@@ -114,11 +189,10 @@
 }
 
 /* Company count box */
-.company-count-box {
-  margin: 20px auto;
-  max-width: 800px;
+.partner-section .company-count-box {
   background-color: #fff;
   padding: 20px;
+  margin: 20px 0;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -148,7 +222,25 @@
     transform: translateX(-50%);
   }
 }
+@media (max-width: 768px) {
+  /* Adjust Header text size for smaller screens */
+  header h1 {
+    font-size: 2.5rem;
+  }
 
+  header p {
+    font-size: 1rem;
+  }
+
+  /* About Us Section */
+  .about-us-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-us-left {
+    text-align: center;
+  }}
 /* Inner scrolling container */
 .company-list-inner {
   display: flex;
@@ -217,5 +309,20 @@
   border-radius: 8px;
   margin-bottom: 10px;
 }
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2rem;
+  }
 
-  
+  header p {
+    font-size: 0.9rem;
+  }
+
+  .we-offer-section .offer-item {
+    padding: 15px;
+  }
+
+  .partner-section .company-count-box {
+    padding: 15px;
+  }
+}

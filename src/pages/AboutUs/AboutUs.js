@@ -52,8 +52,8 @@ function AboutUs() {
     {/* Company Overview Section */}
     <section className="about-us-section" data-aos="fade-up">
       <div className="about-us-container">
-        <div className="about-us-left">
-          <h2>Company Overview</h2>
+        <div className="about-us-left ">
+          <h2 className="section-title">Company Overview</h2>
           <p>AVTech Solution was established in the year 2003 to catch the wave of opportunity presented by the newly discovered use of the data projector in the display of computer-generated data to large audiences. The group has now evolved into 360-degree event management and consulting solutions provider. We strive to provide reliable and creative event solutions to clients with an emphasis on high standards for quality delivery and value for money.</p>
           <br/> <p>We help in the Creation and Development of large scale events such as festivals, conferences, ceremonies, weddings, formal parties, concerts, or conventions.</p>
           <b>Amit Sonone</b><br />
@@ -83,7 +83,7 @@ function AboutUs() {
           </video>
         </div>
         <div className="why-choose-us-text">
-          <h2>Why Choose Us</h2>
+          <h2 className="section-title">Why Choose Us</h2>
           <video
             autoPlay
             muted
@@ -99,7 +99,7 @@ function AboutUs() {
     </section>
       {/* Services Section */}
       <section style={{ padding: "60px 20px", backgroundColor: "#f9f9f9", textAlign: "center" }} data-aos="fade-up">
-        <h2>We Offers</h2>
+        <h2 className="section-title">We Offers</h2>
         <div style={{ display: "flex", justifyContent: "center", gap: "20px", flexWrap: "wrap" }}>
           <div style={{ flex: "1 1 250px", backgroundColor: "#fff", padding: "20px", borderRadius: "8px", boxShadow: "0 4px 8px rgba(0,0,0,0.1)" }} data-aos="zoom-in">
             <i className="fas fa-calendar-check" style={{ fontSize: "2rem", color: "#007bff" }}></i>
