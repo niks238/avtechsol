@@ -23,7 +23,7 @@ function Home() {
   return (
     <>
       <Navbar />
-      {/* Video Background Section */}
+      
       <div className="video-background">
         <video autoPlay muted loop playsInline className="background-video">
           <source src={bgvideo} type="video/mp4" />
@@ -46,7 +46,7 @@ function Home() {
         <img src={conferenceImage} alt="Conference AV Setup" className="about-img" />
       </div>
     </section>
-    <section className="service-cards-section">
+    <section className="service-cards-section ">
       <h2 className="section-title">Our Services</h2>
       <div className="cards-container">
         <div className="service-card">
@@ -93,7 +93,7 @@ function Home() {
       {/* Content Column */}
       <div className="content-column">
         <h2 className="section-title">Our Advanced Technology</h2>
-        <p>
+        <p className="paragraph">
           Discover the latest in audio-visual technology to make your events unforgettable. From advanced sound systems to high-definition screens, we bring top-tier solutions to elevate your experience.
         </p>
         <button className="cta-button">Learn More</button>
@@ -101,7 +101,7 @@ function Home() {
 
       {/* Image Column with Image Card */}
       <div className="image-column ">
-        <div className="image-card d-flex flex-wrap">
+        <div className="image-card ">
           <img src={microphones} alt="Equipment 1" className="image-card-item" />
           <img src={mixer} alt="Equipment 2" className="image-card-item" />
           <img src={LEDWalls} alt="Equipment 3" className="image-card-item" />

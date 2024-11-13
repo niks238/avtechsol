@@ -19,9 +19,9 @@ p {
 /* Header Styles */
 header {
   background: url('https://www.audiovisual.ie/wp-content/uploads/2015/12/Do-You-Need-An-Audio-Visual-Operator-Audio-Visual-Rental-Ireland.jpg') no-repeat center center/cover;
-  color: #fff;
-  padding: 50px 20px;
+  color: #0e3c92;
   text-align: center;
+  padding: 30px 10px;
 }
 
 header h1 {
@@ -60,6 +60,9 @@ header p {
   .about-us-right {
     flex: 1;
   }
+  .img-about{
+    height: 100px;
+  }
   .about-us-left h2 {
     font-size: 2rem;
     margin-bottom: 20px;
@@ -72,6 +75,123 @@ header p {
   .about-us-left b {
     font-weight: bold;
   }
+  /* Services Section */
+.services-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2A3663;
+  margin-bottom: 30px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service-item {
+  flex: 1 1 250px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-item i {
+  font-size: 3rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.service-item h3 {
+  font-size: 1.5rem;
+  color: #2A3663;
+  margin: 10px 0;
+}
+
+.service-item p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services-container {
+    flex-direction: column;
+  }
+
+  .service-item {
+    flex: 1 1 auto;
+    max-width: 100%;
+  }
+}
+/* Why Choose Us Section */
+.why-choose-us-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2A3663;
+  margin-bottom: 30px;
+}
+
+.why-choose-us-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.why-choose-us-video, .why-choose-us-text {
+  flex: 1 1 45%;
+  max-width: 500px;
+}
+
+.why-choose-us-video-content {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.why-choose-us-video-content:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .why-choose-us-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .why-choose-us-video, .why-choose-us-text {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
   
   .about-us-left .professional-team,
   .about-us-left .certification-organization,
@@ -224,8 +344,9 @@ header p {
 @media (max-width: 768px) {
   /* Adjust Header text size for smaller screens */
   header h1 {
-    font-size: 2.5rem;
+    font-size: 2px;
   }
+ 
 
   header p {
     font-size: 1rem;
@@ -324,6 +445,191 @@ header p {
   .partner-section .company-count-box {
     padding: 15px;
   }
+  header {
+    color: #0e3c92;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  header p {
+    font-size:1rem;
+    margin-top: 5px;
+  }
+  .about-us-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: left; /* Align items to the left */
+    padding: 0px 10px;
+  }
+  
+  /* Container for the section */
+  .about-us-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 40px 20px;
+  }
+  
+  /* Left side content */
+  .about-us-left {
+    flex: 1;
+  }
+  .about-us-right {
+    flex: 1;
+  }
+  .about-us-left h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-us-left p {
+    font-size: 1rem;
+  }
+  
+  .about-us-left b {
+    font-weight: bold;
+  }
+  
+  .about-us-left .professional-team,
+  .about-us-left .certification-organization,
+  .about-us-left .feedback-testimonial {
+    margin-top: 10px;
+    font-weight: normal;
+    text-align: justify;
+    color: #007bff;
+  }
+  
+  /* Right side content (Image) */
+  .about-us-right {
+    flex: 1;
+    text-align: center;
+  }
+  .about-us-right img {
+    height: 200px;
+    border-radius: 8px;
+  }
+ 
+  .why-choose-us-container {
+    margin-top: -150px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .why-choose-us-container {
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  
+  .why-choose-us-text {
+    flex: 1;
+    padding-left: 20px;
+    text-align: left;
+  }
+  
+  .why-choose-us-text h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  
+  .why-choose-us-text p {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  
+
+  .why-choose-us-video {
+    flex: 1;
+  }
+  .why-choose-us-text {
+    flex: 1;
+  }
+  
+  .why-choose-us-video-content {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  .we-offer-section {
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  .we-offer-section .section-title {
+    font-size: 2rem;
+  }
+  
+  .we-offer-section .offer-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 250px;
+    margin: 10px;
+  }
+  .we-offer-section .offer-item i {
+    font-size: 2rem;
+    color: #007bff;
+  }
+  
+  .we-offer-section .offer-item h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+  }
+  
+  .we-offer-section .offer-item p {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  /* Container section */
+/* Container section */
+.partner-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+/* Section heading */
+.partner-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+/* Introductory text */
+.partner-section p.intro-text {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+/* Company count box */
+.partner-section .company-count-box {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Company count heading */
+.company-count-box h3 {
+  font-size: 2rem;
+  color: #007bff;
+}
+
+/* Outer container for company logos */
+.company-carousel {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
 }
 .paragraph{
   text-align: justify;
