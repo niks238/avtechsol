@@ -37,7 +37,7 @@ function Home() {
       <section id="about" className="about-section">
       <div className="about-content">
         <h2 className="about-heading">About Our AV Solutions</h2>
-        <p className="about-description">
+        <p className="about-description paragraph">
           We specialize in providing top-quality audio-visual rental solutions for conferences and events. Our commitment to excellence ensures your event has flawless AV support.
         </p>
        <a href="/aboutus"><button className="about-cta-button">Learn More</button></a>
@@ -115,10 +115,10 @@ function Home() {
           </div>
           <div className="section-text">
             <h2 className="section-title"> Microphones : </h2>
-            <p className="section-description">
+            <p className="section-description paragraph">
             We provide high-quality microphones that capture sound with exceptional clarity, perfect for live events, recording sessions, and broadcasts. Our range includes durable dynamic microphones, ideal for live performances with excellent noise control, and sensitive condenser microphones that capture every detail, perfect for studio environments. Our microphones ensure your audience hears every word and note with precision.
             </p>
-            <p className="section-description">
+            <p className="section-description paragraph">
             Our microphones are designed with advanced features to minimize handling noise and handle high sound pressure levels, so they deliver clear audio even at high volumes. Whether you’re organizing a large event or setting up a small recording space, our microphones provide the quality and reliability you need for any sound setup.
             </p>
             <button className="cta-button">Learn More</button>
@@ -129,10 +129,10 @@ function Home() {
         <div className="section-content">
           <div className="section-text">
             <h2 className="section-title"> Mixers : </h2>
-            <p className="section-description">
+            <p className="section-description paragraph">
             Our audio mixers give you complete control over sound balance and quality, allowing you to adjust volume, tone, and effects across multiple audio sources with ease. Designed for both beginners and professionals, our mixers have user-friendly interfaces and high-quality preamps to ensure clear, professional sound in any environment. From concerts to conferences, our mixers offer the tools you need for an impressive audio experience.
             </p>
-            <p className="section-description">
+            <p className="section-description paragraph">
             We offer both analog and digital mixers to fit different needs, with advanced models featuring touch screens and customizable presets. Our digital mixers make it easy to save settings for future use, while our analog mixers deliver robust performance for any setup. With our mixers, your sound will always be perfectly balanced and optimized for your event or production.
             </p>
             <button className="cta-button">Get Started</button>
@@ -149,10 +149,10 @@ function Home() {
           </div>
           <div className="section-text">
             <h2 className="section-title"> LED Walls : </h2>
-            <p className="section-description">
+            <p className="section-description paragraph">
             We provide vibrant and high-resolution LED walls that can transform any event with stunning visuals. Ideal for concerts, presentations, and advertisements, our LED walls offer bright, sharp images that stand out even in brightly lit spaces. With high brightness and rich colors, they ensure your audience sees everything clearly, creating an immersive visual experience
             </p>
-            <p className="section-description">
+            <p className="section-description paragraph">
             Our LED walls are customizable to fit any space, whether large or small, and have high refresh rates for smooth video playback. They’re energy-efficient, reducing costs while delivering impressive visuals. When you choose our LED walls, you’re adding a dynamic element to your event that captivates audiences and enhances engagement.
             </p>
             <button className="cta-button">Learn More</button>

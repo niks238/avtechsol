@@ -54,8 +54,8 @@ function AboutUs() {
       <div className="about-us-container">
         <div className="about-us-left ">
           <h2 className="section-title">Company Overview</h2>
-          <p>AVTech Solution was established in the year 2003 to catch the wave of opportunity presented by the newly discovered use of the data projector in the display of computer-generated data to large audiences. The group has now evolved into 360-degree event management and consulting solutions provider. We strive to provide reliable and creative event solutions to clients with an emphasis on high standards for quality delivery and value for money.</p>
-          <br/> <p>We help in the Creation and Development of large scale events such as festivals, conferences, ceremonies, weddings, formal parties, concerts, or conventions.</p>
+          <p className="paragraph">AVTech Solution was established in the year 2003 to catch the wave of opportunity presented by the newly discovered use of the data projector in the display of computer-generated data to large audiences. The group has now evolved into 360-degree event management and consulting solutions provider. We strive to provide reliable and creative event solutions to clients with an emphasis on high standards for quality delivery and value for money.</p>
+          <br/> <p className="paragraph">We help in the Creation and Development of large scale events such as festivals, conferences, ceremonies, weddings, formal parties, concerts, or conventions.</p>
           <b>Amit Sonone</b><br />
           <p className="professional-team"> <IoMdArrowDroprightCircle/> Professional Team</p>
           <p className="certification-organization"> <IoMdArrowDroprightCircle/> Certification Organization</p>

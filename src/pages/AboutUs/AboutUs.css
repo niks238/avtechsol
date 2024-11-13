@@ -50,7 +50,6 @@ header p {
     display: flex;
     gap: 20px;
     justify-content: space-between;
-    align-items: center;
     padding: 40px 20px;
   }
   
@@ -325,4 +324,7 @@ header p {
   .partner-section .company-count-box {
     padding: 15px;
   }
+}
+.paragraph{
+  text-align: justify;
 }
