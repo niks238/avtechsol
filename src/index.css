@@ -7,6 +7,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
 /* Reset some default styles */
 * {
   margin: 0;
@@ -22,8 +33,6 @@ html {
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  width: 100%;
-  overflow-x: hidden;
 }
 
 /* Ensure images and media elements scale responsively */
@@ -85,12 +94,37 @@ h1, h2, h3 {
 }
 
 /* Media Queries for Responsive Design */
-@media (min-width: 768px) {
+
+/* For mobile devices */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .column {
+    flex: 1 1 100%; /* Single column on small mobile screens */
+  }
+}
+
+/* For tablets */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .navbar {
+    flex-direction: row;
+    padding: 1rem 2rem;
+  }
+
   .column {
     flex: 1 1 48%; /* Two columns on tablets */
   }
 }
 
+/* For larger screens like desktops */
 @media (min-width: 1024px) {
   .column {
     flex: 1 1 30%; /* Three columns on larger screens */
@@ -123,4 +157,5 @@ button {
 button:hover {
   background-color: #0056b3;
 }
+
 

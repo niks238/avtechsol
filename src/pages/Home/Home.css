@@ -563,7 +563,7 @@ section {
  
  /* Mobile Devices */
 
- @media screen and (min-width: 400px) and (max-width: 600px) {
+ @media screen and (min-width: 300px) and (max-width: 600px) {
   .two-column-section {
     flex-direction: column; /* Stack columns vertically */
     padding: 20px 10px;
