@@ -267,42 +267,18 @@
   
   
   /* Responsive Design */
-  @media (max-width: 768px) {
-    .about-section {
-      flex-direction: column;
-      height: auto;
-      padding: 40px 20px;
-    }
+  @media (max-width: 400px) {
   
-    .about-heading {
-      font-size: 2rem;
-    }
-  
-    .about-description {
-      font-size: 1rem;
-    }
-  
-    .about-cta-button {
-      font-size: 1rem;
-      padding: 10px 20px;
-    }
-  
-    .about-img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 10px;
-    }
+    
+    
   }
   /* Responsive Adjustments */
-  @media (max-width: 768px) {
-    .content-overlay h1 {
-      font-size: 2rem;
-    }
-    
-    .content-overlay p {
-      font-size: 1rem;
-    }
+  @media (max-width: 400px) {
+   
+
+  }
+  @media (max-width: 400px) {
+  
   }
   .testimonials-section {
     position: relative;
@@ -531,25 +507,8 @@ section {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-  .section-one .section-content,
-  .section-two .section-content {
-    flex-direction: column;
-    align-items: start;
-  }
-
-  .section-one .section-text,
-  .section-two .section-text {
-    width: 100%;
-    padding: 0 20px;
-    text-align: start;
-  }
-
-  .section-one .section-image,
-  .section-two .section-image {
-    width: 100%;
-    padding: 20px;
-  }
+@media (max-width: 400px) {
+  
 }
 /* Testimonials Section */
 .testimonials-section {
@@ -600,32 +559,11 @@ section {
   color: #666666;
   font-weight: bold;
 }
-@media (max-width: 768px) {
-  .testimonials-section {
-    background-image: none; /* Remove background image on mobile */
-    height: auto; /* Adjust height for content */
-    padding: 30px 20px; /* Adjust padding for smaller screens */
-    color: #2A3663; /* Change text color if needed for better readability */
-  }
 
-  .testimonials-heading {
-    font-size: 2rem;
-  }
+ 
+ /* Mobile Devices */
 
-  .testimonial-card {
-    max-width: 100%;
-    flex: 1 1 100%;
-  }
-
-  .testimonials-cards {
-    flex-direction: row;
-  }
-  .two-column-section{
-    display: flex;
-    flex-direction: row;
-  }
-}
-@media (max-width: 768px) {
+ @media screen and (min-width: 400px) and (max-width: 600px) {
   .two-column-section {
     flex-direction: column; /* Stack columns vertically */
     padding: 20px 10px;
@@ -676,6 +614,116 @@ section {
     height: 100px;
     width: 300px;
   }
+  .testimonials-section {
+    background-image: none; /* Remove background image on mobile */
+    height: auto; /* Adjust height for content */
+    padding: 30px 20px; /* Adjust padding for smaller screens */
+    color: #2A3663; /* Change text color if needed for better readability */
+  }
+
+  .testimonials-heading {
+    font-size: 2rem;
+  }
+
+  .testimonial-card {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .testimonials-cards {
+    flex-direction: row;
+  }
+  .two-column-section{
+    display: flex;
+    flex-direction: row;
+  }
+  .section-one .section-content,
+  .section-two .section-content {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .section-one .section-text,
+  .section-two .section-text {
+    width: 100%;
+    padding: 0 20px;
+    text-align: start;
+  }
+
+  .section-one .section-image,
+  .section-two .section-image {
+    width: 100%;
+    padding: 20px;
+  }
+    /* Hide content column on mobile */
+    .content-column {
+      display: none;
+    }
+  
+    /* Display images in a larger size in a single column */
+    .image-column {
+      height: 200px;
+    }
+    .about-section {
+      flex-direction: column;
+      height: auto;
+      padding: 40px 20px;
+    }
+  
+    .about-heading {
+      font-size: 2rem;
+    }
+  
+    .about-description {
+      font-size: 1rem;
+    }
+  
+    .about-cta-button {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  
+    .about-img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .image-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+    }
+    
+    .image-card-item {
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .content-overlay h1 {
+      font-size: 2rem;
+    }
+    
+    .content-overlay p {
+      font-size: 1rem;
+    }
+
 }
 
+
+/* Tablet Devices */
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .btn {
+    background-color: blue;
+  }
+}
+
+/* Dekstop device */
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .btn {
+    background-color: chartreuse;
+  }
+}
 

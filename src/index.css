@@ -7,3 +7,120 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensures the website scales properly on all devices */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Ensure images and media elements scale responsively */
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Basic container styling for centering and padding */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* Responsive text alignment */
+h1, h2, h3 {
+  text-align: center;
+}
+
+/* Responsive navbar style */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: #fff;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Basic responsive grid layout */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.column {
+  flex: 1 1 100%;
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 768px) {
+  .column {
+    flex: 1 1 48%; /* Two columns on tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  .column {
+    flex: 1 1 30%; /* Three columns on larger screens */
+  }
+}
+
+/* Footer styling */
+.footer {
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 0.875rem;
+}
+
+/* Button styling */
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+

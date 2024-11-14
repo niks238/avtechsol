@@ -34,8 +34,8 @@
 }
 
 .navbar-container {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 100%;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -48,7 +48,7 @@
 
 .navbar-logo-image {
   height: 60px;
-  margin-right: 200px;
+  margin-right: 180px;
 }
 
 .navbar-menu {
@@ -80,7 +80,7 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media screen and (min-width : 400px) and (max-width : 600px) {
   .navbar-container {
     flex-direction: row;
     justify-content: flex-start;
@@ -126,6 +126,6 @@
   }
 .navbar-logo-image {
  height: 50px;
- margin-left: 300px;
+ margin-left: 220px;
 }
 }
