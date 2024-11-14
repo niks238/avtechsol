@@ -30,7 +30,7 @@ function Home() {
           Your browser does not support the video tag.
         </video>
         <div className="content-overlay">
-          <p className="video-content-heading-one">AUDIO-VISUAL AND</p>
+          <p className="video-content-heading-one video-heading">AUDIO-VISUAL AND</p>
           <p className="video-content-heading-two">CONFERENCE SOLUTIONS.</p>
         </div>
       </div>
@@ -47,7 +47,7 @@ function Home() {
       </div>
     </section>
     <section className="service-cards-section ">
-      <h2 className="section-title">Our Services</h2>
+      <h2 className="section-title common-size">Our Services</h2>
       <div className="cards-container">
         <div className="service-card">
           <div className="service-card-image">

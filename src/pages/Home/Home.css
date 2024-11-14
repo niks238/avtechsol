@@ -564,6 +564,10 @@ section {
  /* Mobile Devices */
 
  @media screen and (min-width: 300px) and (max-width: 600px) {
+  .content-overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
   .two-column-section {
     flex-direction: column; /* Stack columns vertically */
     padding: 20px 10px;
@@ -673,15 +677,16 @@ section {
       padding: 40px 20px;
     }
     .section-one{
-      margin-top: -250px;
+      margin-top: -140px;
     }
   
     .about-heading {
       font-size: 2rem;
     }
-  
+    
     .about-description {
       font-size: 1rem;
+
     }
   
     .about-cta-button {
@@ -713,7 +718,36 @@ section {
     .content-overlay p {
       font-size: 1rem;
     }
-
+    .video-content-heading-one {
+      position: absolute; /* Allows control over the exact positioning */
+            /* Distance from the left side of the screen */
+      top: -100px;       /* Distance from the bottom of the screen */
+      font-size: 300px; /* Adjusts size of the heading */
+      color: whitesmoke;
+      font-family: 'Poppins', sans-serif; /* Modern font from Google Fonts */
+      font-weight: 900;   /* Makes the heading bold */
+    }
+    .video-content-heading-two{
+      position: absolute; /* Allows control over the exact positioning */
+      left: 100px;         /* Distance from the left side of the screen */
+      top: -80px;       /* Distance from the bottom of the screen */
+      font-size: 2.5rem;  /* Adjusts size of the heading */
+      color: whitesmoke;
+      font-family: 'Poppins', sans-serif; /* Modern font from Google Fonts */
+      font-weight: 900;   /* Makes the heading bold */
+    }
+    .about-heading {
+      font-size: 20px;
+      font-weight: 100;
+      margin-top: -35px;
+      color: #1e90ff;
+      font-family: 'Poppins', sans-serif
+      
+    }
+   .common-size{
+    color: #1e90ff;
+    font-size: 20px;
+   }
 }
 
 
