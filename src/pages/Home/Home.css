@@ -659,6 +659,9 @@ section {
     .content-column {
       display: none;
     }
+    .image-column {
+      display: none;
+    }
   
     /* Display images in a larger size in a single column */
     .image-column {
@@ -668,6 +671,9 @@ section {
       flex-direction: column;
       height: auto;
       padding: 40px 20px;
+    }
+    .section-one{
+      margin-top: -250px;
     }
   
     .about-heading {
