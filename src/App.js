@@ -8,6 +8,7 @@ import Services from "./pages/Services/Services.js"
 import Solutions from "./pages/Solutions/Solutions.js"
 import MarketVerticals from "./pages/MarketVerticals/MarketVerticals.js"
 import Blogs from "./pages/Blogs/Blogs.js"
+import Products from "./pages/Products/Products.js"
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/solutions" element={<Solutions />} />
           <Route path="/marketverticals" element={<MarketVerticals />} />
           <Route path="/blogs" element={<Blogs />} />
+          <Route path="/products" element={<Products/>}/>
         </Routes>
       </div>
     </Router>
