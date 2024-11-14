@@ -7,41 +7,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-body {
+body, html {
   margin: 0;
+  padding: 0;
   font-family: 'Poppins', sans-serif;
   width: 100%;
-  overflow-x: hidden;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-}
-
-/* Reset some default styles */
+/* Reset styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Ensures the website scales properly on all devices */
-html {
-  font-size: 16px;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-}
-
-/* Ensure images and media elements scale responsively */
 img, video {
-  max-width: 100%;
+  max-width: 100%; /* Ensure images don’t exceed container width */
   height: auto;
 }
 
-/* Basic container styling for centering and padding */
+/* Container styling */
 .container {
   width: 100%;
   max-width: 1200px;
@@ -49,12 +35,6 @@ img, video {
   margin: 0 auto;
 }
 
-/* Responsive text alignment */
-h1, h2, h3 {
-  text-align: center;
-}
-
-/* Responsive navbar style */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -62,6 +42,7 @@ h1, h2, h3 {
   padding: 1rem 2rem;
   background-color: #333;
   color: #fff;
+  flex-wrap: wrap;
 }
 
 .navbar .logo {
@@ -82,7 +63,7 @@ h1, h2, h3 {
   text-decoration: none;
 }
 
-/* Basic responsive grid layout */
+/* Responsive column layout */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -95,7 +76,7 @@ h1, h2, h3 {
 
 /* Media Queries for Responsive Design */
 
-/* For mobile devices */
+/* Small Mobile Screens */
 @media (max-width: 600px) {
   .navbar {
     flex-direction: column;
@@ -108,30 +89,24 @@ h1, h2, h3 {
   }
 
   .column {
-    flex: 1 1 100%; /* Single column on small mobile screens */
+    flex: 1 1 100%; /* Single column on mobile */
   }
 }
 
-/* For tablets */
+/* Tablets */
 @media (min-width: 600px) and (max-width: 1023px) {
-  .navbar {
-    flex-direction: row;
-    padding: 1rem 2rem;
-  }
-
   .column {
     flex: 1 1 48%; /* Two columns on tablets */
   }
 }
 
-/* For larger screens like desktops */
+/* Desktops */
 @media (min-width: 1024px) {
   .column {
     flex: 1 1 30%; /* Three columns on larger screens */
   }
 }
 
-/* Footer styling */
 .footer {
   padding: 1rem;
   background-color: #333;
@@ -139,11 +114,6 @@ h1, h2, h3 {
   text-align: center;
 }
 
-.footer p {
-  font-size: 0.875rem;
-}
-
-/* Button styling */
 button {
   padding: 0.5rem 1rem;
   border: none;
@@ -157,5 +127,3 @@ button {
 button:hover {
   background-color: #0056b3;
 }
-
-
